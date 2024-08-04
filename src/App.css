@@ -1,0 +1,15 @@
+
+
+.App{
+  /* background-image: url(./assets/Image2.jpg); */
+  height: 300vh;
+  
+}
+.Image{
+  position: fixed;
+ 
+}
+
+.Message{
+  translate: 200px 110px;
+}
