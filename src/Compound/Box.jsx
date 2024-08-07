@@ -1,11 +1,11 @@
 
-
+import beauty from '../assets/Face.jpg'
 
 export const Box = ()=>{
 
     return <div className="" >
-        <div className="flex items-center justify-center w-3">
-      <div className="w-6 h-3 bg-black"></div>
+        <div className="flex items-center justify-center w-8">
+        <img src={beauty} alt="" />
     </div>
     </div>
 }

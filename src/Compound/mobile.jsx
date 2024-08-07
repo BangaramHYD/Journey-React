@@ -7,26 +7,26 @@ export const Mobile = ({postion,scrollPosition})=>{
             x:130,
             y:75
           }}/> :null }
-         {scrollPosition>150 +postion? <BoxP postion={{
+         {/* {scrollPosition>150 +postion? <BoxP postion={{
             x:150,
             y:80
-          }}/> :null }
+          }}/> :null } */}
          {scrollPosition>200 +postion? <BoxP postion={{
             x:170,
             y:85
           }}/> :null }
-         {scrollPosition>250 +postion? <BoxP postion={{
+         {/* {scrollPosition>250 +postion? <BoxP postion={{
             x:190,
             y:90
-          }}/> :null }
+          }}/> :null } */}
          {scrollPosition>300 +postion? <BoxP postion={{
             x:220,
             y:100
           }}/> :null }
-         {scrollPosition>350 +postion? <BoxP postion={{
+         {/* {scrollPosition>350 +postion? <BoxP postion={{
             x:240,
             y:105
-          }}/> :null }
+          }}/> :null } */}
          {scrollPosition>400 +postion? <BoxP postion={{
             x:270,
             y:110

@@ -50,6 +50,8 @@ function App() {
   if(windowSize.height>800 ){
     return <div>
       <div className='App'>
+       &nbsp;&nbsp;&nbsp;
+        please scroll the screen
       <Image/>
        
       <div className=' absolute'>
