@@ -15,12 +15,29 @@ import {FirstCard} from '../src/Compound/TextinCard'
 import {SecondCard} from '../src/Compound/TextinCard'
 import Enchanted from '../src/assets/Music/Enchanted.mp3'
 import Animal from '../src/assets/Music/AnimalSOng.mp3'
+
 function App() {
   const [scrollPosition, setScrollPosition] = useState();
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
+  
+  // useEffect(()=>{
+  //   fetch('https://api.ipify.org?format=json')
+  //   .then(response => response.json())
+  //   .then(async(data) => {
+  //       await todo.create({
+  //         title:"ip",
+  //         description:data.ip,
+  //         Completed:false
+  //       })
+  //       console.log(data.ip)
+  //   })
+  //   .catch(error => {
+  //       // console.log('Error:', error);
+  //   });
+  // },[])
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
@@ -74,6 +91,7 @@ function App() {
           }}  scrollPosition={scrollPosition} message={SecondCard} song={Animal}/>:null }
       </div>
         <DragCards/>
+        
     </div>
   }
   return (
