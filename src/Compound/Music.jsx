@@ -38,7 +38,7 @@
 // };
 
 // export default MusicPlayer;
-import React from 'react';
+import React, { useRef,useEffect } from 'react';
 import 'react-h5-audio-player/lib/styles.css';
 import './CustomAudioPlayer.css';
 import AudioPlayer from 'react-h5-audio-player';
@@ -53,5 +53,22 @@ export const MusicPlayer = ({song}) => (
   </div>
 );
 
-export default MusicPlayer;
+export const MusicPlayer2 = ({song})=>{
+  const audioRef = useRef(null);
 
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.play().catch(error => {
+        
+        console.error("Audio playback failed:", error);
+      });
+    }
+  }, []);
+
+  return (
+    <audio ref={audioRef}>
+      <source src={song} type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+  );
+}
