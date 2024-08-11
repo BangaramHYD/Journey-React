@@ -11,6 +11,16 @@ export const MessagesComponent = () => {
     "chei kalipi cheruvai",
     "sagali manam okatai",
     "Oh Srija Srija Oh Srija",
+    "na oosure unte neethoti",
+    "vedi podhu valapu cherigi",
+    "vethike na kallu aarigi",
+    "aiena parugagadhe",
+    "ne vodine cherangaa...",
+    "eetu veche gali chudu",
+    "kalisamu kalalo ninna",
+    "chei kalipi cheruvai",
+    "sagali manam okatai",
+    "Oh Srija Srija Oh Srija",
     "na oosure unte neethoti"
   ];
 
