@@ -15,6 +15,7 @@ import {FirstCard} from '../src/Compound/TextinCard'
 import {SecondCard} from '../src/Compound/TextinCard'
 import Enchanted from '../src/assets/Music/Enchanted.mp3'
 import Animal from '../src/assets/Music/AnimalSOng.mp3'
+import { FinalText } from './Compound/Final'
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState();
@@ -91,6 +92,7 @@ function App() {
           }}  scrollPosition={scrollPosition} message={SecondCard} song={Animal}/>:null }
       </div>
         <DragCards/>
+        <FinalText/>
         
     </div>
   }

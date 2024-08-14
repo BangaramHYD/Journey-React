@@ -12,7 +12,7 @@ import Bangaram7 from '../assets/Bangaram_7.jpg'
 import {MessagesComponent} from '../Compound/Conculsion'
 import { MusicPlayer2 } from "./Music";
 import sonof from '../assets/Music/Bangaram.mp3'
-export const DragCards = () => {
+export const  DragCards = () => {
   return (
     <section className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-neutral-950">
       <h2 className="relative z-0 text-[1 0vw] font-black text-neutral-800 md:text-[100px]">
