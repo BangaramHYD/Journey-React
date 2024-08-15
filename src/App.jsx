@@ -15,7 +15,7 @@ import {FirstCard} from '../src/Compound/TextinCard'
 import {SecondCard} from '../src/Compound/TextinCard'
 import Enchanted from '../src/assets/Music/Enchanted.mp3'
 import Animal from '../src/assets/Music/AnimalSOng.mp3'
-import { FinalText } from './Compound/Final'
+import { FinalText } from './Compound/paperbackground'
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState();
