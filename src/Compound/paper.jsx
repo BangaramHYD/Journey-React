@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import {ChangeText} from '../Compound/Text'
 let highestZIndex = 1;
 
 export const Paper = ({ text }) => {
@@ -9,7 +9,20 @@ export const Paper = ({ text }) => {
   const [zIndex, setZIndex] = useState(1);
   const containerRef = useRef(null);
   const paperRef = useRef(null);
+  const message = ["Take care", "Be strong", "Sleep well", "ALL THE VERY BEST"];
+  const [messageState, setMessageState] = useState("");
+  const [index, setIndex] = useState(0);
 
+  useEffect(() => {
+    const time = setTimeout(() => {
+      setMessageState(message[index]);
+      setIndex((el) => (el + 1) % message.length);
+    }, 1000);
+
+    return () => clearTimeout(time);
+  }, [index]);
+
+  // const Song = "../assets/Music/main.mp3"; 
   useEffect(() => {
     // Set the container to be the window by default
     if (containerRef.current) {
@@ -94,8 +107,13 @@ export const Paper = ({ text }) => {
         onTouchMove={handleMove}
         onTouchEnd={handleEnd}
       >
-        <div className="flex items-center justify-evenly">{text}</div>
+        {/* <div className="flex items-center justify-evenly">{}</div> */}
+        <div className=" font-Bangaram text-4xl p-5 ml-10 text-pink-500 font-bold">
+
+        <ChangeText/>
+        </div>
       </div>
+      
     </div>
   );
 };

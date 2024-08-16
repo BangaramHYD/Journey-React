@@ -38,11 +38,11 @@
 // };
 
 // export default MusicPlayer;
-import React, { useRef,useEffect } from 'react';
+import React, { useRef,useEffect} from 'react';
 import 'react-h5-audio-player/lib/styles.css';
 import './CustomAudioPlayer.css';
 import AudioPlayer from 'react-h5-audio-player';
-
+// import song from '../assets/Music/srija.mp3'
 export const MusicPlayer = ({song}) => (
   <div style={{ width: '300px'}}>
     <AudioPlayer
@@ -52,6 +52,7 @@ export const MusicPlayer = ({song}) => (
     />
   </div>
 );
+
 
 export const MusicPlayer2 = ({song})=>{
   const audioRef = useRef(null);
@@ -72,3 +73,13 @@ export const MusicPlayer2 = ({song})=>{
     </audio>
   );
 }
+
+export const MusicConst = ()=>(
+  <div style={{ width: '300px'}}>
+    <AudioPlayer
+      
+      src={song}
+      onPlay={e => console.log("Playing...")}
+    />
+  </div>
+)

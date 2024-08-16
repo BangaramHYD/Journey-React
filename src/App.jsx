@@ -17,6 +17,7 @@ import Enchanted from '../src/assets/Music/Enchanted.mp3'
 import Animal from '../src/assets/Music/AnimalSOng.mp3'
 import { FinalText } from './Compound/paperbackground'
 
+import {MusicPlayer} from '../src/Compound/Music'
 function App() {
   const [scrollPosition, setScrollPosition] = useState();
   const [windowSize, setWindowSize] = useState({
@@ -93,7 +94,7 @@ function App() {
       </div>
         <DragCards/>
         <FinalText/>
-        
+        {/* <MusicPlayer song={Song} /> */}
     </div>
   }
   return (
